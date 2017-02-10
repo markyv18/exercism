@@ -1,12 +1,12 @@
 class HelloWorld
 
 
-  def self.hello(name)
-    name = "World"
-    "Hello, #{name}!"
+  def hello(name)
+    name = "Tierra"
+    "Hola, #{name}!"
   end
 
-  def self.hello1(name)
+  def hello1(name)
     if name == "Alice"
       "Hello, Alice!"
     else
@@ -19,3 +19,6 @@ class HelloWorld
   # end
 
 end
+
+# hello = HelloWorld.new
+# hello.hello("x")

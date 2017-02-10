@@ -18,15 +18,18 @@ end
 
 class HelloWorldTest < Minitest::Test
   def test_no_name
-    assert_equal 'Hello, World!', HelloWorld.hello("")
+    hello = HelloWorld.new
+    assert_equal 'Hola, Tierra!', hello.hello("")
   end
 
   def test_sample_name
-    assert_equal 'Hello, Alice!', HelloWorld.hello1('Alice')
+    hello = HelloWorld.new
+    assert_equal 'Hello, Alice!', hello.hello1('Alice')
   end
 
   def test_other_sample_name
-    assert_equal 'Hello, Bob!', HelloWorld.hello1('Bob')
+    hello = HelloWorld.new
+    assert_equal 'Hello, Bob!', hello.hello1('Bob')
   end
 end
 
